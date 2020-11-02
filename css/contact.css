@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.events-heading {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin: 5vh 0 15vh 0;
+}
+
+.events-heading h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 4vw;
+    text-transform: uppercase;
+    margin: 5vh 0;
+}
+
+.events-heading h2 {
+    font-weight: 500;
+}
+
+.events-heading p {
+    margin-bottom: 5vh;
+}
+
+.contact-info a {
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.contact-info {
+    width: 70%;
+    display: flex;
+    height: auto;
+}
+
+.contact-info .left {
+    width: 70%;
+}
+
+.contact-info .right .circle {
+    width: 15vw;
+    height: 15vw;
+    background-image: url('/media/Ruther-Flores-AΦB-2017C.png');
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.join-apb {
+    width: 100%;
+    height: 40vh;
+    background-color: #300d0f;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.join-apb .heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.join-apb .heading h1 {
+    font-weight: 300;
+    margin: 3vh 0;
+}
+
+.join-apb .heading h1 b{
+    font-weight: 600;
+}
+
+.join-apb .heading a {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: white;
+    color: #300d0f;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.join-apb .heading a:hover {
+    background-color: #300d0f;
+    color: white;
+    border: 2px solid white;
+}
+
+.browse {
+    width: 100%;
+    height: auto;
+    background-color: #300d0f;
+    display: grid;
+    place-items: center;
+    padding-bottom: 10vh;
+}
+
+.browse .content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.browse .content .tiles {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    overflow: scroll;
+}
+
+.browse .content h2 {
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.61);
+    margin: 0;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.browse .content .tiles .tile {
+    width: 40vh;
+    height: 45vh;
+    background-color: white;
+    margin: 2vw;
+    margin-left: 0;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.browse .content .tiles .tile:hover {
+    transform: scale(1.1);
+}
+
+.browse .content .tiles .tile img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+
+@media screen and (max-width: 864px) {
+
+    .events-heading {
+        margin: 5vh 0 10vh 0;
+    }
+
+    .events-heading h1 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 10vw;
+        text-transform: uppercase;
+        margin: 5vh 0;
+    }
+
+    .contact-info {
+        flex-direction: column-reverse;
+        width: 80%;
+        margin: 0vh 0vh 5vh 0vh;
+    }
+
+    .contact-info .right {
+        display: grid;
+        place-items: center;
+    }
+
+    .contact-info .right .circle {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .contact-info .left {
+        margin-top: 5vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .join-apb .heading h1 {
+        font-size: 7vw;
+    }
+
+    .browse .content .tiles {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .browse .content .tiles .tile {
+        margin-top: 5vh;
+    }
+
+    .browse .content h2 {
+        font-size: 7.5vw;
+        color: rgba(255, 255, 255, 0.61);
+        margin: 0;
+        letter-spacing: 5px;
+        font-weight: 600;
+    }
+}

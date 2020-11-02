@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.events-heading {
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    place-items: center;
+}
+
+.events-heading h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+
+.projects-events {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.projects-events i {
+    width: 80%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 5vh 0 10vh 0;
+}
+
+.projects-events .item {
+    width: 80%;
+    display: flex;
+    margin-bottom: 5vh;
+}
+
+.projects-events .item .left {
+    width: 50%;
+}
+
+.projects-events .item .right {
+    width: 40vw;
+}
+
+.projects-events .item .right img {
+    width: 35vw;
+    border-radius: 10px;
+}
+
+.projects-events .item .left .heading {
+    background-color: red;
+    color: white;
+    font-size: 1.5vw;
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+.projects-events .item .left p {
+    margin-top: 5vh;
+    width: 90%;
+}
+
+@media screen and (max-width: 864px) {
+    .projects-events .item {
+        width: 90%;
+        display: block;
+        margin-bottom: 5vh;
+    }
+
+    .projects-events .item .left {
+        width: 100%;
+    }
+    
+    .projects-events .item .right {
+        width: 100%;
+    }
+
+    .projects-events .item .left .heading {
+        background-color: red;
+        color: white;
+        font-size: 80%;
+        padding: 10px 40px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        font-weight: 600;
+    }
+
+    .projects-events i {
+        width: 90%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 1vh 0 5vh 0;
+    }
+
+    .events-heading h1 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 7vw;
+        text-transform: uppercase;
+    }
+}

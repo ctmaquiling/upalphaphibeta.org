@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.jumbotron {
+    background-color: #5E181B;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.mycontainer {
+    width: 90%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.subheading {
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.425);
+    text-align: center;
+    margin: 10vh 0vh 5vh 0vh;
+}
+
+.alumni-row {
+    display: flex;
+}
+
+.alumni-row .group {
+    margin: 2vw;
+    text-align: center;
+    width: 15vw;
+}
+
+.alumni-row .group .circle {
+    width: 15vw;
+    height: 15vw;
+    background-color: black;
+    border-radius: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.alumni-row .group .name {
+    margin: 0;
+    margin-top: 3vh;
+    font-weight: 600;
+    text-align: center;
+}
+
+.alumni-row .group .position {
+    width: 15vw;
+    opacity: 50%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.table-striped {
+    width: 70%;
+}
+
+.table-striped thead {
+    background-color: #5E181B;
+    color: white;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+.space {
+    width: 100%;
+    height: 20vh;
+}
+
+@media screen and (max-width: 864px) {
+
+    .heading {
+        font-size: 10vw;
+    }
+
+    .subheading {
+        font-size: 7vw;
+    }
+
+    .alumni-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .alumni-row .group {
+        width: 40vw;
+    }
+
+    .alumni-row .group .circle {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .alumni-row .group .name {
+        font-size: 3.5vw;
+    }
+
+    .alumni-row .group .position {
+        font-size: 3.5vw;
+        width: 40vw;
+    }
+
+    .table-striped {
+        width: 90%;
+    }
+
+    .table-striped thead {
+        font-size: 4vw;
+    }
+
+}

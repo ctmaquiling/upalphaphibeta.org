@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    color: white;
+}
+
+.mynav {
+    background-color: black;
+}
+
+.stories-title {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../media/stories/stories-cover.png');
+    background-size: cover;
+    filter: grayscale(100%);
+    display: grid;
+    justify-items: center;
+    position: relative;
+    opacity: 50%;
+}
+
+.stories-title .content {
+    position: relative;
+    top: 40vh;
+}
+
+.headings {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: -85vh;
+}
+
+.headings h1 {
+    font-size: 5vw;
+    color: black
+}
+
+
+.overlay {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    opacity: 70%;
+}
+
+.stories-title h1 {
+    font-size: 5vw;
+    font-weight: 600;
+    color: black;
+}
+
+.stories-content {
+    width: 100%;
+    height: 260vh;
+    display: grid;
+    justify-items: center;
+    position: relative;
+    bottom: 70vh;
+    color: black;
+}
+
+.main-title {
+    width: 70%;
+    height: 50vh;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+}
+
+.main-title .left {
+    width: 60%;
+}
+
+.main-title .right {
+    width: 40%;
+    margin: 3vw;
+}
+
+.main-title .right h1 {
+    color: #5E181B;
+    font-weight: 600;
+}
+
+.main-title .right p {
+    margin-top: 3vh;
+}
+
+.hover-scale {
+    transition: 0.2s ease;
+}
+
+.read-btn a {
+    color: #5E181B;
+    border: 1px solid #5E181B;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.read-btn a:hover {
+    background-color: #5E181B;
+    font-weight: 600;
+    color: white;
+}
+
+.main-title .left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.story-blocks {
+    margin-top: 5vh;
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 32%;
+    height: 82vh;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.block .top {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.block .top img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.block .bottom {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.block .bottom .content {
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+    color: black;
+}
+
+.block .bottom h1 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: 0;
+    color: #5E181B;
+}
+
+.block .bottom h2 {
+    font-size: 0.95vw;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.block .bottom p {
+    font-size: 1vw;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 864px) {
+
+    .headings {
+        top: -25vh;
+    }
+
+    .headings h1 {
+        font-size: 15vw;
+    }
+
+    .stories-title {
+        height: 50vh;
+    }
+
+    .stories-title h1 {
+        position: relative;
+        bottom: 15vh;
+        font-size: 10vw;
+    }
+
+    .stories-content {
+        bottom: 5vh;
+        height: auto;
+    }
+
+    .main-title {
+        width: 90%;
+        height: 25vh;
+        display: none;
+    }
+
+    .main-title .right h1 {
+        font-size: 4vw;
+    }
+
+    .main-title .right p {
+        margin: 0;
+        font-size: 2vw;
+    }
+
+    .story-blocks {
+        display: block;
+        width: 90%;
+    }
+
+    .block {
+        width: 100%;
+        height: 72vh;
+        margin-bottom: 5vh;
+    }
+
+    .block .bottom h1 {
+        font-size: 5vw;
+    }
+
+    .block .bottom h2 {
+        font-size: 3vw;
+    }
+
+    .block .bottom p {
+        font-size: 3vw;
+    }
+
+    .block .bottom p {
+        font-size: 3vw;
+        margin: 5px 0px 15px 0px;
+    }
+
+    .read-btn a {
+        margin: 0;
+        padding: 3px 5px;
+        font-size: 4vw;
+    }
+
+}

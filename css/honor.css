@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+.nav-wrapper ul {
+    bottom: 6px;
+}
+
+.mynav {
+    background-color: black;
+}
+
+.display-grid-center {
+    position: relative;
+    bottom: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+.mycontainer {
+    width: 80%;
+}
+
+.jumbotron {
+    height: 100vh;
+    background-color: black;
+    background-image: url('/media/history-honoroll-cover.png');
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    margin-top: 8vh;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 4vw;
+    text-shadow: 2px 2px 30px rgba(255, 255, 255, 0.5);
+}
+
+.mycontainer > h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3vw;
+    color: white;
+}
+
+.tab-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-group .tab {
+    width: 30%;
+    padding: 1.5vh 0px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 7px;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    transition: 0.2s ease;
+}
+
+.tab-group .tab:hover {
+    transform: scale(1.05);
+    cursor: grab;
+}
+
+.tab-group .tab .year {
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+}
+
+.tab-group .tab .name {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.705);
+    font-size: 1.2vw;
+    margin-left: 1vw;
+}
+
+@media screen and (max-width: 864px) {
+
+    .jumbotron > h1 {
+        font-size: 12vw;
+    }
+
+    .mycontainer {
+        width: 95%;
+    }
+
+    .mycontainer > h1 {
+        font-size: 7vw;
+    }
+
+    .tab-group {
+        display: grid;
+        place-items: center;
+    }
+
+    .tab-group .tab {
+        width: 90%;
+    }
+
+    .tab-group .tab .year{
+        font-size: 5vw;
+    }
+
+    .tab-group .tab .name{
+        font-size: 5vw;
+    }
+
+
+}

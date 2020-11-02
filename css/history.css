@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+  
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.heading {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+.heading h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+.navbar-brand > img {
+    width: 30px;
+    height: 30px;
+}
+
+.c1941 {
+    top: -7vh;
+}
+
+.c1951 {
+    top: 35vh;
+}
+
+.c1957 {
+    top: 35vh;
+}
+
+.c1960s {
+    top: 45vh;
+}
+
+.c1964 {
+    top: 35vh;
+}
+
+.c1966 {
+    top: 33vh;
+}
+
+.c1975 {
+    top: 25vh;
+}
+
+.c1989 {
+    top: 10vh;
+}
+
+.c1990 {
+    top: 15vh;
+}
+
+.c1992 {
+    top: 50vh;
+}
+
+@media screen and (max-width: 864px) {
+
+    .c1941 {
+        top: 0vh;
+    }
+    
+    .c1951 {
+        top: 0vh;
+    }
+    
+    .c1957 {
+        top: 0vh;
+    }
+    
+    .c1960s {
+        top: 0vh;
+    }
+    
+    .c1964 {
+        top: 0vh;
+    }
+    
+    .c1966 {
+        top: 0vh;
+    }
+    
+    .c1975 {
+        top: 0vh;
+    }
+    
+    .c1989 {
+        top: 0vh;
+    }
+    
+    .c1990 {
+        top: 0vh;
+    }
+    
+    .c1992 {
+        top: 0vh;
+    }
+
+}
