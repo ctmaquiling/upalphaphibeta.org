@@ -43,7 +43,7 @@ a:hover {
 }
 
 .contact-info {
-    width: 70%;
+    width: 40%;
     display: flex;
     height: auto;
 }
@@ -52,7 +52,7 @@ a:hover {
     width: 70%;
 }
 
-.contact-info .right .circle {
+.contact-info .left .circle {
     width: 15vw;
     height: 15vw;
     background-image: url('/media/Ruther-Flores-AΦB-2017C.png');
@@ -110,7 +110,6 @@ a:hover {
 .browse .content {
     width: 100%;
     height: auto;
-    overflow: hidden;
     display: grid;
     place-items: center;
 }
@@ -119,7 +118,6 @@ a:hover {
     width: 100%;
     justify-content: center;
     display: flex;
-    overflow: scroll;
 }
 
 .browse .content h2 {
@@ -196,7 +194,6 @@ a:hover {
         display: flex;
         align-items: center;
         flex-direction: column;
-        overflow: scroll;
     }
 
     .browse .content .tiles .tile {
