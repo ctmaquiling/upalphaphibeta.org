@@ -183,29 +183,29 @@ small:before {
   place-items: center;
 }
 
-.content {
+.alphancrusade .content {
   width: 80%;
   height: auto;
   display: flex;
   margin-bottom: 15vh;
 }
 
-.content .left {
+.alphancrusade .content .left {
   width: 60%;
 }
 
-.content .left img {
+.alphancrusade .content .left img {
   width: 100%;
   border-radius: 10px;
 }
 
-.content .right {
+.alphancrusade .content .right {
   width: 40%;
   margin: 50px;
   margin-top: 0;
 }
 
-.content .right p {
+.alphancrusade .content .right p {
   font-size: x-large;
   font-weight: 200;
 }
@@ -696,7 +696,7 @@ small:before {
     margin-top: 5vh;
   }
   
-  .content {
+  .alphancrusade .content {
     width: 80%;
     height: auto;
     display: block;
@@ -704,23 +704,23 @@ small:before {
     margin-top: 5vh;
   }
   
-  .content .left {
+  .alphancrusade .content .left {
     width: 100%;
   }
   
-  .content .left img {
+  .alphancrusade .content .left img {
     margin-bottom: 5vh;
     width: 100%;
     border-radius: 10px;
   }
   
-  .content .right {
+  .alphancrusade .content .right {
     width: 100%;
     margin: 0px;
     margin-top: 0;
   }
   
-  .content .right p {
+  .alphancrusade .content .right p {
     font-size: large;
     font-weight: 200;
     margin-bottom: 5vh;
