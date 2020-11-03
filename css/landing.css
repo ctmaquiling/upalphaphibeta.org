@@ -36,6 +36,7 @@ a {
   width: 100%;
   height: 100vh;
   position: relative;
+  min-height: 100vh;
 }
 
 .landing_content {
@@ -174,6 +175,41 @@ small:before {
   font-weight: 600;
 }
 
+.alphancrusade {
+  width: 100%;
+  height: auto;
+  background: white;
+  display: grid;
+  place-items: center;
+}
+
+.content {
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin-bottom: 15vh;
+}
+
+.content .left {
+  width: 60%;
+}
+
+.content .left img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content .right {
+  width: 40%;
+  margin: 50px;
+  margin-top: 0;
+}
+
+.content .right p {
+  font-size: x-large;
+  font-weight: 200;
+}
+
 .the-alphan-crusade {
   display: grid;
   place-items: center;
@@ -197,6 +233,7 @@ small:before {
   margin: 10px 0px;
   font-size: 1.3rem;
   font-weight: 200;
+  margin-bottom: 10vh;
 }
 
 .image-text {
@@ -219,7 +256,6 @@ small:before {
 
 .section-btn a {
   position: relative;
-  top: 20px;
   font-size: 1rem;
   font-weight: 500;
   padding: 10px 20px;
@@ -648,6 +684,49 @@ small:before {
 
 @media screen and (max-width: 864px) {
 
+  .alphancrusade {
+    width: 100%;
+    height: auto;
+    background: white;
+    display: grid;
+    place-items: center;
+  }
+
+  .alphancrusade .headings {
+    margin-top: 5vh;
+  }
+  
+  .content {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+  }
+  
+  .content .left {
+    width: 100%;
+  }
+  
+  .content .left img {
+    margin-bottom: 5vh;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .content .right {
+    width: 100%;
+    margin: 0px;
+    margin-top: 0;
+  }
+  
+  .content .right p {
+    font-size: large;
+    font-weight: 200;
+    margin-bottom: 5vh;
+  }
+  
+
   .section4 {
     overflow: hidden;
   }
@@ -758,11 +837,6 @@ small:before {
     text-align: justify;
     position: relative;
     top: 20px;
-  }
-  
-  .section-btn a {
-    position: relative;
-    top: 50px;
   }
 
   .section2 .top .box {
